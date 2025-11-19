@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda Villa Clara - Miel, Café y Productos Agrícolas</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logoFooter-3.png" alt="Logo Hacienda Villa Clara">
+            </a>
+
+            <div class="header-right">
+                <nav class="navbar">
+                    <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+                    <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+                    <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+                    <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+                    <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+                    <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+                </nav>
+
+                <a href="./cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+            <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+            <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+            <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+            <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+            <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SLIDER DE BANNERS CON SWIPER -->
+        <section class="slider-section">
+            <div class="swiper slider-container" id="heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <img src="./assets/images/mielyCafe.jpg" alt="Miel y Café Premium">
+                        <div class="slide-content">
+                            <h2>Miel y Café de Hacienda Villa Clara</h2>
+                            <p>Producción 100% natural y certificada desde nuestra hacienda</p>
+                            <a href="./catalog.html" class="btn btn-primary">Compra Aquí</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img src="./assets/images/agricolas.jpg" alt="Productos Agrícolas Premium">
+                        <div class="slide-content">
+                            <h2>Productos Agrícolas de Calidad Superior</h2>
+                            <p>Semillas, maquinaria y alimentos para tu producción agropecuaria</p>
+                            <a href="./catalog.html" class="btn btn-primary">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img src="./assets/images/ganado.jpg" alt="Ganado Certificado">
+                        <div class="slide-content">
+                            <h2>Ganado Premium y Certificado</h2>
+                            <p>Selección de las mejores razas para tu ganadería</p>
+                            <a href="./catalog.html" class="btn btn-primary">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <button class="slider-btn slider-btn-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn slider-btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination slider-dots"></div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS DESTACADAS -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Categorías Destacadas</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-jar"></i>
+                        </div>
+                        <h3>Miel</h3>
+                        <p>100% orgánica y pura</p>
+                        <a href="./miel.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3>Café</h3>
+                        <p>Premium de montaña</p>
+                        <a href="./cafe.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-cow"></i>
+                        </div>
+                        <h3>Ganado</h3>
+                        <p>Razas certificadas</p>
+                        <a href="./ganado.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-tractor"></i>
+                        </div>
+                        <h3>Maquinaria</h3>
+                        <p>Equipos modernos</p>
+                        <a href="./agricola.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Semillas</h3>
+                        <p>Híbridos de alto rendimiento</p>
+                        <a href="./agricola.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h3>Alimentos Animales</h3>
+                        <p>Nutrición especializada</p>
+                        <a href="./agricola.html" class="category-link">Ver Más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="description-section">
+            <div class="container">
+                <div class="description-content">
+                    <h2>Hacienda Villa Clara: Productos Premium para tu Operación Agropecuaria</h2>
+                    <p>Miel y café de calidad superior, ganado certificado, productos agrícolas, maquinaria especializada y servicios de asesoría agropecuaria. Con más de 20 años de experiencia, garantizamos productos de máxima calidad y excelente servicio.</p>
+                    <p>Nuestro catálogo integral ofrece soluciones completas para ganadería, agricultura y producción de miel y café. Todos nuestros productos están certificados y seleccionados para asegurar el éxito de tu operación.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section class="why-us-section">
+            <div class="container">
+                <h2 class="section-title">¿Por Qué Elegirnos a Nosotros?</h2>
+                <div class="why-us-grid">
+                    <div class="why-us-card">
+                        <div class="why-us-icon">
+                            <i class="fa-solid fa-check-double"></i>
+                        </div>
+                        <h3>Calidad</h3>
+                        <p>Manejamos los mejores proveedores con la mejor calidad para darte mayor seguridad.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Asesoría</h3>
+                        <p>Te acompañamos en todo el proceso de compra con la mejor asesoría para que te lleves lo que realmente necesitas.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-icon">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h3>Precios</h3>
+                        <p>Gracias a la estrecha relación con nuestros proveedores, te ofrecemos los mejores precios del mercado.</p>
+                    </div>
+                    <div class="why-us-card">
+                        <div class="why-us-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <h3>Portafolio</h3>
+                        <p>En nuestros almacenes encontrarás diferentes insumos para el agro en un solo sitio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column about">
+                    <img src="./assets/images/logoVillaClara-1.png" alt="Logo Hacienda Villa Clara" class="footer-logo">
+                    <p>Hacienda Villa Clara: Miel y café premium, ganado certificado, productos agrícolas, maquinaria especializada y servicios de asesoría agropecuaria.</p>
+                </div>
+
+                <div class="footer-column contact">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="https://wa.me/573223394935" target="_blank" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>+57 322 3394935</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/agroshop" target="_blank"
+                                aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@agroshop.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@agroshop.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/" target="_blank" aria-label="Location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dirección</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hacienda Villa Clara. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Burbuja flotante del Carrito -->
+    <a href="./cart.html" class="cart-bubble" aria-label="Ver carrito">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-bubble-counter" id="cart-bubble-counter">0</span>
+    </a>
+
+    <!-- Burbuja flotante de WhatsApp -->
+    <a href="https://wa.me/573223394935?text=Hola%20Hacienda%20Villa%20Clara%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="whatsapp-bubble" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

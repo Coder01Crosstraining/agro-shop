@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Hacienda Villa Clara</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logoFooter-3.png" alt="Logo Hacienda Villa Clara">
+            </a>
+
+            <div class="header-right">
+                <nav class="navbar">
+                    <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+                    <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+                    <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+                    <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+                    <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+                    <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+                </nav>
+
+                <a href="./cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+            <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+            <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+            <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+            <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+            <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tu Cotización</h2>
+                    <p>Verifica los productos, ajusta las cantidades y solicita tu asesoría con un clic.</p>
+                </div>
+
+                <div class="cart-page-wrapper">
+                    <div id="cart-items-container" class="cart-items-list">
+                    </div>
+
+                    <div id="cart-summary-container" class="cart-summary-sidebar">
+                        <div class="summary-header">
+                            <h3><i class="fa-solid fa-receipt"></i> Resumen de Cotización</h3>
+                        </div>
+                        <div class="summary-content">
+                            <div class="summary-row">
+                                <span>Productos:</span>
+                                <span id="total-items">0</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <button id="checkout-btn" class="btn btn-primary btn-full-width">
+                                <i class="fa-brands fa-whatsapp"></i> Solicitar Asesoría
+                            </button>
+                            <a href="./catalog.html" class="btn btn-secondary btn-full-width">
+                                <i class="fa-solid fa-arrow-left"></i> Seguir Comprando
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+                        <div class="empty-content">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h3>Tu carrito está vacío</h3>
+                            <p>Añade productos desde nuestro catálogo para solicitar una cotización.</p>
+                            <a href="./catalog.html" class="btn btn-primary">Ir al Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column about">
+                    <img src="./assets/images/logoVillaClara-1.png" alt="Logo Hacienda Villa Clara" class="footer-logo">
+                    <p>Hacienda Villa Clara: Miel y café premium, ganado certificado, productos agrícolas, maquinaria especializada y servicios de asesoría agropecuaria.</p>
+                </div>
+
+                <div class="footer-column contact">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="https://wa.me/573223394935" target="_blank" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>+57 322 3394935</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ofmedicalsas?igsh=dDEwNTU2cmJ0aDBs" target="_blank"
+                                aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ofmedicalsas@gmail.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>ofmedicalsas@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/j8wpH6CGkWAt5F3T6"
+                                target="_blank" aria-label="Location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dirección</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hacienda Villa Clara. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Burbuja flotante del Carrito -->
+    <a href="./cart.html" class="cart-bubble" aria-label="Ver carrito">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-bubble-counter" id="cart-bubble-counter">0</span>
+    </a>
+
+    <!-- Burbuja flotante de WhatsApp -->
+    <a href="https://wa.me/573223394935?text=Hola%20Hacienda%20Villa%20Clara%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="whatsapp-bubble" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

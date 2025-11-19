@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sector Ganado - Hacienda Villa Clara</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logoFooter-3.png" alt="Logo Hacienda Villa Clara">
+            </a>
+
+            <div class="header-right">
+        <nav class="navbar">
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+            <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+            <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+            <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+            <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+            <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+        </nav>                <a href="./cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="./miel.html"><i class="fa-solid fa-jar"></i> Miel</a>
+            <a href="./cafe.html"><i class="fa-solid fa-mug-hot"></i> Café</a>
+            <a href="./ganado.html"><i class="fa-solid fa-cow"></i> Ganado</a>
+            <a href="./agricola.html"><i class="fa-solid fa-leaf"></i> Agrícola</a>
+            <a href="./services.html"><i class="fa-solid fa-handshake"></i> Servicios</a>
+            <a href="./catalog.html"><i class="fa-solid fa-store"></i> Catálogo</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="./assets/images/ganado2.jpg" alt="Ganado de Hacienda Villa Clara">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Ganado Premium Certificado</h1>
+                    <p>Selección de las mejores razas certificadas y adaptadas a nuestro clima. Ganado saludable, bien alimentado y con garantía de procedencia para tu operación ganadera.</p>
+                    <a href="./catalog.html?category=ganado" class="btn btn-primary">Ver Ganado Disponible</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN DEL SECTOR -->
+        <section class="sector-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Certificado</h3>
+                        <p>Todos nuestros animales cuentan con certificados de salud y genealogía garantizados.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3>Saludable</h3>
+                        <p>Revisión veterinaria completa y cuidados preventivos para garantizar bienestar animal.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-cow"></i>
+                        </div>
+                        <h3>Razas Selectas</h3>
+                        <p>Holstein, Dorper, Pietrain, Cuarto de Milla y más. Las mejores razas para cada propósito.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Asesoría Incluida</h3>
+                        <p>Recibe guía completa sobre manejo, alimentación y cuidados de tu ganado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VARIEDADES -->
+        <section class="sector-varieties">
+            <div class="container">
+                <h2 class="section-title">Especies Disponibles</h2>
+
+                <div class="varieties-grid">
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&h=300&fit=crop" alt="Bovinos">
+                        <h3>Bovinos</h3>
+                        <p>Terneros, vacas lecheras y criollos para reproducción y engorde. Calidad premium certificada.</p>
+                    </div>
+
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1548094096-f3df4518e719?w=400&h=300&fit=crop" alt="Ovinos">
+                        <h3>Ovinos y Caprinos</h3>
+                        <p>Corderos Dorper para carne. Excelente ganancia de peso y conversión alimenticia.</p>
+                    </div>
+
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop" alt="Porcinos">
+                        <h3>Porcinos</h3>
+                        <p>Cerdos Pietrain magros con excelente calidad de carne y crecimiento rápido.</p>
+                    </div>
+
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1585110422820-e91c3e15ef92?w=400&h=300&fit=crop" alt="Aves">
+                        <h3>Aves de Postura</h3>
+                        <p>Gallinas ponedoras Lohmann de alta productividad. Huevos de excelente calidad garantizado.</p>
+                    </div>
+
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&h=300&fit=crop" alt="Equinos">
+                        <h3>Equinos</h3>
+                        <p>Caballos Cuarto de Milla mansos y dóciles. Ideales para trabajo y monta recreativa.</p>
+                    </div>
+
+                    <div class="variety-card">
+                        <img src="https://images.unsplash.com/photo-1619451334792-250ba93c2a13?w=400&h=300&fit=crop" alt="Alimentos">
+                        <h3>Alimentos Balanceados</h3>
+                        <p>Concentrados y suplementos especializados para cada especie. Nutrición garantizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="sector-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Desarrolla tu Ganadería con Calidad</h2>
+                    <p>Ganado certificado, saludable y adaptado. Con asesoría completa para el éxito de tu operación.</p>
+                    <a href="./catalog.html?category=ganado" class="btn btn-primary">Ver Catálogo de Ganado</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column about">
+                    <img src="./assets/images/logoVillaClara-1.png" alt="Logo Hacienda Villa Clara" class="footer-logo">
+                    <p>Hacienda Villa Clara: Miel y café premium, ganado certificado, productos agrícolas, maquinaria especializada y servicios de asesoría agropecuaria.</p>
+                </div>
+
+                <div class="footer-column contact">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="https://wa.me/573223394935" target="_blank" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>+57 322 3394935</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@haciendavillaclara.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@haciendavillaclara.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/" target="_blank" aria-label="Location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dirección</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hacienda Villa Clara. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Burbuja flotante del Carrito -->
+    <a href="./cart.html" class="cart-bubble" aria-label="Ver carrito">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-bubble-counter" id="cart-bubble-counter">0</span>
+    </a>
+
+    <!-- Burbuja flotante de WhatsApp -->
+    <a href="https://wa.me/573223394935?text=Hola%20Hacienda%20Villa%20Clara%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="whatsapp-bubble" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
