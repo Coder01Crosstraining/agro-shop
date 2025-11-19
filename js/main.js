@@ -1,3 +1,36 @@
+/*
+* MENÚ MÓVIL - EJECUTAR SIEMPRE
+* Se carga antes del DOMContentLoaded para asegurar disponibilidad inmediata
+*/
+function initMobileMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            document.body.classList.toggle('mobile-menu-open');
+        });
+
+        // Cerrar el menú cuando se hace clic en un enlace
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('mobile-menu-open');
+            });
+        });
+    }
+}
+
+// Ejecutar menú mobile cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', initMobileMenu);
+
+// Fallback en caso de que DOMContentLoaded ya haya disparado
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+    initMobileMenu();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     /*
@@ -33,37 +66,26 @@ document.addEventListener('DOMContentLoaded', () => {
     /*
     * CONTROLADOR DEL SLIDER DE BANNERS CON SWIPER
     */
-    const heroSwiper = new Swiper('#heroSwiper', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.slider-dots',
-            clickable: true,
-            dynamicBullets: false,
-        },
-        navigation: {
-            nextEl: '.slider-btn-next',
-            prevEl: '.slider-btn-prev',
-        },
-        effect: 'slide',
-        speed: 500,
-        centeredSlides: true,
-    });
-
-    /*
-    * CONTROLADOR DEL MENÚ DE NAVEGACIÓN MÓVIL
-    * Se encarga de mostrar y ocultar el menú en dispositivos móviles
-    * al hacer clic en el botón de hamburguesa.
-    */
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            document.body.classList.toggle('mobile-menu-open');
+    const heroSwiper = document.getElementById('heroSwiper');
+    if (heroSwiper) {
+        new Swiper('#heroSwiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.slider-dots',
+                clickable: true,
+                dynamicBullets: false,
+            },
+            navigation: {
+                nextEl: '.slider-btn-next',
+                prevEl: '.slider-btn-prev',
+            },
+            effect: 'slide',
+            speed: 500,
+            centeredSlides: true,
         });
     }
 

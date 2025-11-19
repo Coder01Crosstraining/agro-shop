@@ -169,14 +169,16 @@ body {
     background: linear-gradient(135deg, var(--primary-gold) 0%, var(--accent-gold) 100%);
     color: var(--primary-dark);
     border-radius: 50%;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.85rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
     font-weight: 700;
     border: 2px solid var(--white);
     animation: pulse 2s infinite;
     box-shadow: 0 4px 12px rgba(209, 183, 122, 0.4);
-    min-width: 22px;
-    text-align: center;
 }
 
 @keyframes pulse {
@@ -322,6 +324,7 @@ body {
     transform: translateY(-15px);
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
+    z-index: 999;
 }
 
 .mobile-menu a {
@@ -1959,6 +1962,26 @@ body.mobile-menu-open .mobile-menu {
 @media (max-width: 768px) {
     .header {
         height: 70px;
+    }
+
+    .header-right {
+        gap: 1rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    body.mobile-menu-open .mobile-menu {
+        display: flex;
     }
 
     .hero {
